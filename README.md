@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+#npm start
+#npx nodemon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Login Page
+![image](https://user-images.githubusercontent.com/97835784/219099082-bb4ee722-12df-4219-b8a4-6fe7697387fd.png)
 
-## Available Scripts
+Sign in Page
+![image](https://user-images.githubusercontent.com/97835784/219099219-de56cc4b-8af6-4e9c-ad89-b77fd9a6f866.png)
 
-In the project directory, you can run:
+Home Page
+![image](https://user-images.githubusercontent.com/97835784/219100100-d90c8932-dc3f-409d-a269-c6150a27175c.png)
 
-### `npm start`
+Modal for Confirmation 
+![image](https://user-images.githubusercontent.com/97835784/219100249-6918348c-4f1d-4906-b40f-35480cd824a3.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Tax After Calculation
+![image](https://user-images.githubusercontent.com/97835784/219100387-abfce6d1-06b6-442c-b509-af1cabc90b14.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+All the tax infos
+![image](https://user-images.githubusercontent.com/97835784/219105484-71246e6a-1e20-453b-a6ac-158320ea9e85.png)
 
-### `npm test`
+Assigning Remainder to user by their email id
+![image](https://user-images.githubusercontent.com/97835784/219105859-7ed7c7bf-f021-4126-9bc0-7e2ec26697fe.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://user-images.githubusercontent.com/97835784/219105905-cf4ddce4-e23b-4815-9532-c6dec04967a3.png)
 
-### `npm run build`
+After Assigning remainder 
+![image](https://user-images.githubusercontent.com/97835784/219106062-16c64750-113d-45e8-8441-51912ebdaac8.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Mail Remainder
+![image](https://user-images.githubusercontent.com/97835784/219107072-d5ec63df-f869-438d-9d59-47fb9676aa4c.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After Marking Paid
+![image](https://user-images.githubusercontent.com/97835784/219106161-cab05dfe-9aea-4ef1-919d-071a273e75a1.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+About Page
+![image](https://user-images.githubusercontent.com/97835784/219106272-82ca6436-c977-4af9-81cf-565b6e835441.png)
 
-### `npm run eject`
+Download Tax Details in Excel sheet
+![image](https://user-images.githubusercontent.com/97835784/219106619-26d9b0ed-4236-4c95-aeaf-69ab5fa725b2.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![image](https://user-images.githubusercontent.com/97835784/219106512-3d4f56e3-44d3-4dcc-a227-7c0afaecf7aa.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
