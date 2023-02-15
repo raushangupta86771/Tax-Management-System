@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Inter:wght@400;600;700&family=Josefin+Slab&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Baloo Bhai 2', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgb(31, 30, 30);
+  /* background-image: linear-gradient(to right top, #edf0f6, #cef5ff, #a6fcfa, #a6fece, #d7f693); */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#c-img{
+  height: 4rem;
+  width: 4rem;
+  align-items: center;
+  margin: auto;
+}
+#insideTxt{
+  color: #e96767;
+}
+
+#logo{
+  color: white;
+  font-size: 1.5rem;
+}
+.fa-snowflake{
+  transition: all linear;
+  animation: rot 2s linear infinite;
+  color: aqua;
+}
+@keyframes rot{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+.wset {
+  margin: 1rem;
+  background-color: #24a79596;
+  color: #e96767;
+  border-radius: 1rem;
+  height: 2.6rem;
+  width: 5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+#ans-txt{
+  font-weight: bold;
+  color: #ff00c8;
+  font-size: 1.3rem;
+}
+
+.wset:hover {
+  background-color: #000311ec;
+  color: #ffffff;
+}
+#signup {
+  background-color: rgb(123, 190, 190);
+}
+
+#main-result {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  text-align: center;
+}
+.showAns {
+  position: relative;
+  height: 400px;
+  background-color: azure;
+}
+
+/* animation for the .loginlabel text to return to normal after 
+user clicks away from the .loginInput box */
+.loginlabel .label-text-text {
+  color: #ffffff;
+  cursor: text;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  -moz-transform: translateY(-34px);
+  -ms-transform: translateY(-34px);
+  -webkit-transform: translateY(-34px);
+  transform: translateY(-34px);
+  transition: all 0.3s;
+}
+/* animation for the text to float up and turn white */
+.loginlabel .loginInput:focus + .label-text {
+  color: #f0f0f0;
+  font-size: 13px;
+  margin-top: 10px;
+  -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+}
+
+.taxCol-head{
+  color: rgb(6, 75, 72);
+}
+
+.adj-w{
+  width: 2rem;
+}
+
+/* remove the .loginInput box styling */
+.loginlabel .loginInput {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #4a4a4a;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: 0;
+  padding: 5px 20px;
+  text-align: center;
+  transition: all 0.3s;
+  width: 200px;
+}
+/* once you click in the .loginInput the .loginInput width box animates */
+.loginlabel .loginInput:focus {
+  max-width: 100%;
+  width: 400px;
+}
+
+/* the text floats up during form validation */
+.loginlabel .loginInput:valid + .label-text {
+  font-size: 13px;
+  -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+}
+
+/* button styling */
+button {
+  background: transparent;
+  color: #f0f0f0;
+  border: 2px solid #f0f0f0;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 20px 75px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 15px 30px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+button:hover,
+button:focus {
+  background-color: white;
+  color: #333333;
+}
+
+.loginlabel {
+  display: block;
+  letter-spacing: 4px;
+  padding-top: 30px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+}
+
+/* button styling */
+button {
+  background: transparent;
+  color: #f0f0f0;
+  border: 2px solid #f0f0f0;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 20px 75px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 15px 30px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+button:hover,
+button:focus {
+  background-color: white;
+  color: #333333;
+}
+
+body {
+  background-image: linear-gradient(to right top, #e8f7f6, #ddf4fc, #dbefff, #e6e7ff, #fadcfc);
+}
+
+.adj-input{
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  border: 1px solid rosybrown;
+  color: #000000;
+}
+
+.containerrrr {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  margin-top: 13rem;
+}
+
+.signForm {
+  width: 50vw;
+  background: rgba(242, 115, 206, 0.3);
+  padding: 3em;
+  height: 760px;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  /* width: fit-content; */
+  margin: auto;
+}
+.adj-height-login{
+  height: fit-content;
+}
+
+.signForm p {
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.7;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 60px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.signForm a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 12px;
+}
+.signForm a:hover {
+  text-shadow: 2px 2px 6px #00000040;
+}
+fo.signForm a:active {
+  text-shadow: none;
+}
+.signForm .signInput {
+  background: transparent;
+  width: 90%;
+  padding: 1em;
+  margin-bottom: 2em;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5000px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: rgb(30, 24, 24);
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  /* transition: all 0.2s ease-in-out; */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.signForm .signInput[type="email"]:focus,
+.signForm .signInput[type="password"]:focus {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+}
+.signForm .signInput[type="button"] {
+  margin-top: 10px;
+  width: 150px;
+  font-size: 1rem;
+}
+.signForm .signInput[type="button"]:hover {
+  cursor: pointer;
+}
+.signForm .signInput[type="button"]:active {
+  background: rgba(255, 255, 255, 0.2);
+}
+/* .signForm:hover {
+  margin: 4px;
+} */
+
+::-moz-placeholder {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+:-ms-input-placeholder {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+::placeholder {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.drop {
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  transition: all 0.2s ease;
+}
+
+
+a,
+.signInput:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.loginsubmit {
+  position: relative;
+  top: 5px;
+  color: white;
+}
+
+.widthSet {
+  background-color: #702be096;
+  color: #ffffff;
+}
+.widthSet:hover {
+  background-color: #000311ec;
+  color: #ffffff;
+}
+
+.taxCol {
+  display: flex;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: white;
+  font-size: 1.3rem;
+  justify-content: center;
+  width: 19rem;
+}
+
+.sbt-btn{
+  color: #000;
+  /* margin-bottom: 90px; */
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .loginlabel {
+    display: block;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    width: 22rem;
+    position: relative;
+    left: -8px;
+    overflow: hidden;
+  }
+
+  .signInput{
+    width: 10px;
+  }
+
+
+
+  .containerrrr {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin-top: 17rem;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .containerrrr button{
+    margin: auto;
+  }
+
+  .signForm {
+    width: 20rem;
+    overflow: hidden;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background: #bdd2dc !important;
+  }
+  #main-result{
+    width: 14rem;
+  }
+  #btn-abt{
+    width: 6rem;
+    font-size: 0.8rem;
+  }
+}

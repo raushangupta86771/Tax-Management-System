@@ -1,0 +1,39 @@
+.card-sh{
+    background-color: rgb(255, 255, 255);
+}
+
+.totalTax{
+    color: brown;
+}
+
+.taxTotal{
+    font-weight: bold;
+    color: rgb(235, 32, 184);
+}
+
+.adj-pending-img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.adj-status{
+    display: flex;
+}
+
+.adj-font-paid-btn{
+    font-size: 10px;
+}
+
+.tax-title{
+    color: rgb(142, 40, 147);
+    font-weight: bold;
+}
+
+.tax-value{
+    color: rgb(255, 98, 80);
+}
+
+.rs-tag{
+    /* color: rgb(1, 22, 15);    */
+}
