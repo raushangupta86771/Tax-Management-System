@@ -5,6 +5,7 @@ import Success from '../success_alert/Success';
 import In_Tax from './In_Tax';
 import ReactHTMLTableToExcel from 'react-html-table-to-excel';
 import "./All_Tax_Details.css"
+import Excel_down from './Excel_down';
 
 const All_Tax_Details = () => {
     let history = useHistory();
@@ -86,55 +87,7 @@ const All_Tax_Details = () => {
     return (
         <div className='All_Tax_Details'>
 
-            {/* generating excel */}
-            <ReactHTMLTableToExcel
-                id="test-table-xls-button"
-                className="download-table-xls-button btn btn-success"
-                table="table-to-xls"
-                filename="tablexls"
-                sheet="tablexls"
-                buttonText="Download as Excel" />
-            <table id="table-to-xls" className='adj-block-table'>
-                <thead>
-                    <tr>
-                        <th>Email</th>
-                        <th>Remainder Date</th>
-                        <th>TotalTax</th>
-                        <th>User Id</th>
-                        <th>Payment Initiated</th>
-                        <th>bas</th>
-                        <th>lta</th>
-                        <th>hra</th>
-                        <th>fa</th>
-                        <th>inv</th>
-                        <th>med</th>
-                        <th>rent</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        storeTax.map((ele) => {
-                            return (
-                                <tr>
-                                    <td>{ele.userNameTax ? ele.userNameTax : "No Remainder Assigned"}</td>
-                                    <td>{ele.remainderDate ? ele.remainderDate : "No Remainder Assigned"}</td>
-                                    <td>{ele.TotalTax}</td>
-                                    <td>{ele.user}</td>
-                                    <td>{ele.bas}</td>
-                                    <td>{ele.lta}</td>
-                                    <td>{ele.hra}</td>
-                                    <td>{ele.fa}</td>
-                                    <td>{ele.med}</td>
-                                    <td>{ele.rent}</td>
-                                </tr>
-                            )
-                        })
-
-                    }
-                </tbody>
-            </table>
-
-            
+            <Excel_down storeTax={storeTax} />
 
             {/* Modal for taking email, due date and reamainder date as input */}
             <button type="button" className="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal" ref={ref}>
@@ -180,6 +133,7 @@ const All_Tax_Details = () => {
                 {
                     remaiderStaus && <Success />
                 }
+
                 {!remaiderStaus && Taxes.map((tax) => {
                     return <In_Tax key={tax._id} tax={tax} updateTax={updateTax} setRemainder={setRemainder} remaiderStaus={remaiderStaus} />
                 })}
